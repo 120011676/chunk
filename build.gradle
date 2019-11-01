@@ -8,6 +8,8 @@
 
 plugins {
     id 'java-library'
+    id 'maven-publish'
+    id 'signing'
 }
 
 description = 'chunk file format'
@@ -32,6 +34,62 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+task sourcesJar(type: Jar) {
+    archiveClassifier = 'sources'
+    from sourceSets.main.allJava
+}
+
+task javadocJar(type: Jar) {
+    archiveClassifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+
+            artifact sourcesJar
+            artifact javadocJar
+            pom {
+                url = 'https://github.com/120011676/chunk'
+                licenses {
+                    license {
+                        name = 'The MIT License (MIT)'
+                        url = 'https://mit-license.org'
+                    }
+                }
+                developers {
+                    developer {
+                        id = '120011676'
+                        name = 'Say.li'
+                        email = '120011676@qq.com'
+                    }
+                }
+                scm {
+                    connection = 'git@github.com:120011676/chunk.git'
+                    developerConnection = 'git@github.com:120011676/chunk.git'
+                    url = 'https://github.com/120011676/chunk'
+                }
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            url "https://oss.sonatype.org/service/local/staging/deploy/maven2"
+            credentials {
+                username = maven_username
+                password = maven_password
+            }
+        }
+    }
+}
+
+signing {
+    sign publishing.publications.mavenJava
 }
 
 tasks.withType(JavaCompile) {
