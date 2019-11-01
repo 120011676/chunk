@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/git/carwashmg" value="2968214656000" />
+        <entry key="$USER_HOME$/git/firefly" value="4412200800000" />
+        <entry key="$USER_HOME$/git/laver" value="7347881947000" />
+        <entry key="$USER_HOME$/git/sec" value="11702773121000" />
+        <entry key="$USER_HOME$/git/sitemesh3" value="5872812284000" />
+        <entry key="$USER_HOME$/git/usercenter-micro" value="4414706225000" />
+        <entry key="$USER_HOME$/git/xhttp" value="2932795252000" />
+        <entry key="$USER_HOME$/git/yzc" value="2975849247000" />
+        <entry key="$USER_HOME$/git/yzc-config-server" value="2980187556000" />
+        <entry key="/tmp/test" value="2962327051000" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Downloads/oauth2" value="PREVIEW" />
+        <entry key="$USER_HOME$/git/ework-java" value="PREVIEW" />
+        <entry key="$USER_HOME$/git/idear-clt-api" value="PREVIEW" />
+        <entry key="$USER_HOME$/git/l2msrv" value="PREVIEW" />
+        <entry key="$USER_HOME$/git/linkcache" value="PREVIEW" />
+        <entry key="$USER_HOME$/git/lscan" value="PREVIEW" />
+        <entry key="$USER_HOME$/git/qzSystem" value="PREVIEW" />
+        <entry key="$USER_HOME$/git/rcg-mysql-db" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="$USER_HOME$/apps/node-v8.0.0-darwin-x64/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+</project>
