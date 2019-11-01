@@ -24,6 +24,7 @@ repositories {
 dependencies {
     implementation 'commons-io:commons-io:latest.release'
     implementation 'com.google.code.gson:gson:latest.release'
+    compileOnly 'org.projectlombok:lombok:latest.release'
     annotationProcessor 'org.projectlombok:lombok:latest.release'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
