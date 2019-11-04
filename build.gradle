@@ -54,6 +54,8 @@ publishing {
             artifact sourcesJar
             artifact javadocJar
             pom {
+                name = 'chunk'
+                description = '(chunk config) file format.'
                 url = 'https://github.com/120011676/chunk'
                 licenses {
                     license {
