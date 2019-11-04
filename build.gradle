@@ -15,7 +15,7 @@ plugins {
 description = 'chunk file format'
 
 group = 'com.github.120011676'
-version = '0.0.1'
+version = '0.0.2'
 
 sourceCompatibility = 1.8
 
