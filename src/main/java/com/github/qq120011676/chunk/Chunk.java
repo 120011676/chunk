@@ -5,10 +5,7 @@ import lombok.Data;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -54,8 +51,16 @@ public class Chunk implements Serializable {
         write(this.toString(), pathname);
     }
 
+    public void writer(OutputStream outputStream) throws IOException {
+        write(this.toString(), outputStream);
+    }
+
     public void writerJson(String pathname) throws IOException {
         write(this.toJson(), pathname);
+    }
+
+    public void writerJson(OutputStream outputStream) throws IOException {
+        write(this.toJson(), outputStream);
     }
 
     public static Chunk reader(String pathname) throws IOException {
@@ -112,5 +117,9 @@ public class Chunk implements Serializable {
 
     private static void write(String content, String pathname) throws IOException {
         FileUtils.writeStringToFile(new File(pathname), content, ENCODING);
+    }
+
+    private static void write(String content, OutputStream outputStream) throws IOException {
+        IOUtils.write(content, outputStream, ENCODING);
     }
 }
